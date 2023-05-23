@@ -1,0 +1,403 @@
+body {
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
+    Meiryo, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.8px;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  border-style: none;
+}
+
+/*--------------------------------
+レイアウト
+---------------------------------*/
+.wrapper {
+  padding-top: 73px;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section:nth-of-type(odd) {
+  background-color: #fff;
+}
+
+.inner {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/*--------------------------------
+見出し
+---------------------------------*/
+.title {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000;
+}
+/*--------------------------------
+ヘッダー
+---------------------------------*/
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #454343;
+  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-right: 20px;
+  letter-spacing: 0.05em;
+}
+
+.header-logo a {
+  color: #fff;
+}
+
+.header-nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header-nav-item a {
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 0;
+  transition: 0.3s;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+.header-nav-item a:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  content: '';
+  transition: 0.3s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #333;
+}
+
+.header-nav-item a:hover:after {
+  width: 100%;
+}
+
+/*--------------------------------
+メインビジュアル
+---------------------------------*/
+.main-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  text-align: center;
+}
+
+.main-visual-inner {
+  padding: 0 40px;
+}
+
+.main-visual-title {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  letter-spacing: 0.1em;
+}
+
+.main-visual-subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 40px;
+  letter-spacing: 0.08em;
+}
+
+.main-visual-profile {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main-visual-img {
+  width: 20%;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.main-visual-img img {
+  border-radius: 50%;
+}
+
+.main-visual-text {
+  flex: 1;
+  text-align: center;
+}
+
+.main-visual-sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  text-align: center;
+}
+
+.main-visual-title-sub {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  letter-spacing: 0.1em;
+}
+
+.main-visual-img-sub {
+  width: 15%;
+  margin-right: 20px;
+}
+
+.main-visual-img-sub img {
+  border-radius: 50%;
+}
+
+/*--------------------------------
+公式サイト
+---------------------------------*/
+.bliz {
+  width: 500px;
+  margin: 0 auto;
+}
+.bliz img {
+  max-width: 100%;
+}
+.offic_item {
+  text-align: center;
+  padding: 0px 0;
+}
+
+/*--------------------------------
+youtube
+---------------------------------*/
+.i {
+  text-align: center;
+}
+
+.youtubebox2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*--------------------------------
+twitter
+---------------------------------*/
+
+.twitter-timeline {
+  padding: 5px;
+  margin: 10px auto;
+}
+@media (max-width: 750px) {
+  .timelinebox {
+    display: flex;
+    flex-direction: column;
+  }
+  .twitter-timeline {
+    padding: 5px;
+  }
+}
+.timelinebox {
+  display: flex;
+}
+/*--------------------------------
+PHOTO
+---------------------------------*/
+
+.box-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.box-row img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .box-row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.photo img {
+  width: auto;
+  height: 300px;
+}
+
+/*--------------------------------
+攻略サイト
+---------------------------------*/
+
+.kou {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.kou img {
+  max-width: 100%;
+  animation: fuwafuwa 3s infinite ease-in-out 0.8s alternate;
+}
+@keyframes fuwafuwa {
+  0% {
+    transform: translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform: translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(7deg);
+  }
+}
+
+/*.kou_url {
+  text-align: center;
+  padding: 0px 0;
+}*/
+
+/*--------------------------------
+About
+---------------------------------*/
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*--------------------------------
+ページトップ
+---------------------------------*/
+.page-top {
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+}
+
+.page-top .material-icons-outlined {
+  vertical-align: bottom;
+  color: #000;
+}
+
+/*--------------------------------
+フッター
+---------------------------------*/
+.footer {
+  padding: 30px;
+  background-color: #454343;
+}
+
+.copyright {
+  font-size: 10px;
+  text-align: center;
+  color: #000;
+}
+
+/*--------------------------------
+ニュース
+---------------------------------*/
+.main-visual-img-sub {
+  width: 700px;
+  margin: 110px;
+}
+.SUB-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -50px;
+  text-align: center;
+}
+.SUB-img {
+  width: auto;
+  height: auto;
+}
+.news-name {
+  margin-bottom: 3px;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.8px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.youtube-name {
+  margin-bottom: 3px;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+
+.SUB-img iframe {
+  justify-content: center;
+}
+.skill-item {
+  text-align: center;
+}
+
+/*--top--*/
+.back-to-top {
+  display: none;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  text-decoration: none;
+}
+.back-to-top::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-color: #333;
+  border-radius: 50%;
+  z-index: -1;
+}

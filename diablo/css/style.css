@@ -204,8 +204,13 @@ img {
   max-width: 100%;
 }
 .offic_item {
+  margin-bottom: 3px;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.8px;
   text-align: center;
-  padding: 0px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /*--------------------------------

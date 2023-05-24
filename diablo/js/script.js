@@ -36,3 +36,35 @@ $(function () {
     return false;
   });
 });
+//透明
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 0) {
+      $('header').css('opacity', 0.8);
+    } else {
+      $('header').css('opacity', 1);
+    }
+  });
+});
+
+//
+<script type="text/javascript" src="jquery-1.3.2.js"></script>;
+$(window).scroll(function () {
+  var scrollTop = $(window).scrollTop();
+  if (scfollTop != 0) $('#nav').stop().anlmate({ opaclty: '0.2' }, 400);
+  else $('#nav').stop().anlmate({ opaclty: '1' }, 400);
+});
+$('#nav').hover(
+  function (e) {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop != 0) {
+      $('#nav').stop().animate({ opacity: '1' }, 400);
+    }
+  },
+  function (e) {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop != 0) {
+      $('#nav').stop().animate({ opacity: '0.2' }, 400);
+    }
+  }
+);

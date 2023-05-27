@@ -20,8 +20,8 @@
             <ul class="header-nav-list">
               <li class="header-nav-item"><a href="#official site">公式サイト</a></li>
               <li class="header-nav-item"><a href="#youtube">youtube</a></li>
-              <li class="header-nav-item"><a href="#twitter">twitter</a></li>
-              <li class="header-nav-item"><a href="#PHOTO">クラス</a></li>
+              <li class="header-nav-item"><a href="#twitter">Twitter</a></li>
+              <li class="header-nav-item"><a href="#PHOTO">ク ラ ス</a></li>
               <li class="header-nav-item"><a href="#cheats">攻略サイト</a></li>
               <li class="header-nav-item"><a href="sub.html">ニュース</a></li>
             </ul>
@@ -53,13 +53,49 @@
         <!-- 公式サイト -->
         <section class="works section" id="official site">
           <div class="inner">
-            <h2 class="title">公式サイト</h2>
+            <center><h2 class="title">公式サイト</h2></center>
             <div class="bliz">
-              <div><img src="diablo/img/diablo_ph.jpeg" alt="BLIZZARD" /></div>
-              <div class="offic_item">
+              <!--<div><img src="diablo/img/diablo_ph.jpeg" alt="BLIZZARD" /></div>-->
+
+              <!--<div class="kv">
+                <div class="catch-copy">
+                  <p class="main-copy">Video</p>
+                  <p class="sub-copy">How to use video tag</p>
+                </div>
+              </div>
+              <div class="video">
+                <video src="diablo/img/bac douga.webm" autoplay loop muted playsinlin></video>
+              </div>-->
+              <div class="mv">
+                <!--  メイン全体を囲うdiv  -->
+                <div class="mv-wrap">
+                  <!--   薄いレイヤー   -->
+                  <div class="mv-bg"></div>
+                  <!--   videoタグ   -->
+                  <video
+                    id="video"
+                    webkit-playsinline=""
+                    playsinline=""
+                    muted=""
+                    autoplay=""
+                    loop=""
+                    src="diablo/img/bac douga.webm"
+                  ></video>
+                  <!--   動画の上に載せるテキスト   -->
+                </div>
+                <!--<div class="offic_item">
                 <a href="https://diablo4.blizzard.com/ja-jp/#story" target="_blank"
                   >公 式 サ イ ト</a
                 >
+              </div>-->
+                <div class="btn-border-gradient-wrap btn-border-gradient-wrap--gold">
+                  <a
+                    href="https://diablo4.blizzard.com/ja-jp/"
+                    class="btn btn-border-gradient"
+                    target="_blank"
+                    ><span class="btn-text-gradient--gold">公 式 サ イ ト</span></a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -69,7 +105,7 @@
         <!-- youtube -->
         <section class="ABOUT section" id="youtube">
           <div class="inner">
-            <h2 class="title">YouTube</h2>
+            <center><h2 class="title">YouTube</h2></center>
 
             <!--トレーラー-->
             <div class="youtubebox2">
@@ -130,17 +166,6 @@
                   allowfullscreen
                 ></iframe>
                 <!--/Episode 3-->
-                <!--ストーリートレーラー
-
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/HukrLKMCz1I"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                  ></iframe>-->
               </div>
             </div>
           </div>
@@ -150,8 +175,8 @@
         <!-- teitter -->
         <section class="skill section" id="twitter">
           <div class="inner">
-            <h2 class="title">twitter</h2>
-            <br />
+            <center><h2 class="title">twitter</h2></center>
+
             <div class="timelinebox">
               <!--diablo-->
               <a
@@ -188,7 +213,7 @@
         <!--クラス-->
         <section class="PHOTO section" id="PHOTO">
           <div class="inner">
-            <h2 class="title">クラス</h2>
+            <center><h2 class="title">クラス</h2></center>
             <div class="youtubebox2">
               <div align="center">
                 <!--ネクロマンサー-->
@@ -255,11 +280,29 @@
         <!--CONTACT-->
         <section class="CONTACT section" id="cheats">
           <div class="inner">
-            <h2 class="title">攻略サイト</h2>
-            <div class="kou">
+            <center><h2 class="title">攻略サイト</h2></center>
+            <!--<div class="kou">
               <img src="diablo/img/img_iyu.png" />
+            </div>-->
+            <div class="url-w">
+              <tr>
+                <h2>
+                  <a
+                    href="https://diablo4.wiki.fextralife.com/Diablo+4+Wiki"
+                    target="_blank"
+                    class="textlink textlink02"
+                    >diablo4.wiki</a
+                  >
+                </h2>
+              </tr>
+              <tr>
+                <h2>
+                  <a href="https://d4builds.gg/" target="_blank" class="textlink textlink02"
+                    >Meta Builds:D4Builds.gg</a
+                  >
+                </h2>
+              </tr>
             </div>
-
             <!--   <div class="kou_url">
               <a href="https://diablo4.blizzard.com/ja-jp/#story" target="_blank">攻略サイト</a>
             </div>-->
@@ -267,7 +310,32 @@
 
           <!-- footer -->
           <footer class="footer">
-            <div class="copyright">&copy; inu.</div>
+            <div class="copyright">
+              <tr>
+                <a
+                  href="https://diablo4.blizzard.com/ja-jp/"
+                  target="_blank"
+                  class="btn btn--orange btn--radius"
+                  ><span>公式サイト</span></a
+                >
+              </tr>
+              <tr>
+                <a
+                  href="https://www.youtube.com/@Diablo"
+                  target="_blank"
+                  class="btn btn--orange btn--radius"
+                  >YouTube</a
+                >
+              </tr>
+              <tr>
+                <a
+                  href="https://twitter.com/Diablo?s=20"
+                  target="_blank"
+                  class="btn btn--orange btn--radius"
+                  >twitter</a
+                >
+              </tr>
+            </div>
           </footer>
           <!-- /footer -->
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

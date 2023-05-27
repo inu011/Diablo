@@ -43,7 +43,34 @@ img {
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: 0.05em;
-  color: #000;
+  color: #d2c8ae;
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+  text-align: center;
+}
+
+.title:before,
+.title:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 50px;
+  height: 5px;
+  background-color: #fff;
+}
+
+.title:before {
+  left: 0;
+  /* ::before */
+  background: linear-gradient(-90deg, #666, transparent);
+}
+
+.title:after {
+  right: 0;
+  /* ::after */
+  background: linear-gradient(90deg, #666, transparent);
 }
 
 /*--------------------------------
@@ -226,6 +253,19 @@ img {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.offic_item {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #fff;
+  background: #6eb7ff;
+  border-bottom: solid 6px #3f87ce;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+}
+.offic_item p {
+  margin: 0;
+  padding: 0;
+}
 
 /*--------------------------------
 youtube
@@ -288,7 +328,7 @@ PHOTO
 攻略サイト
 ---------------------------------*/
 
-.kou {
+/*.kou {
   width: 500px;
   margin: 0 auto;
 }
@@ -307,12 +347,29 @@ PHOTO
   100% {
     transform: translate(0, 0) rotate(7deg);
   }
-}
+}*/
 
 /*.kou_url {
   text-align: center;
   padding: 0px 0;
 }*/
+.textlink02 a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ceb849;
+  transition: width 0.3s;
+}
+
+.textlink02 a:hover::after {
+  width: 100%;
+}
+.url-w {
+  padding-bottom: 40px;
+}
 
 /*--------------------------------
 About
@@ -348,9 +405,24 @@ About
 }
 
 .copyright {
-  font-size: 10px;
+  font-size: 20px;
   text-align: center;
-  color: #000;
+  color: #fff;
+}
+/*--*/
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #300;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: red;
+}
+
+a.btn--radius {
+  border-radius: 100vh;
 }
 
 /*--------------------------------
@@ -371,6 +443,7 @@ About
   width: auto;
   height: auto;
 }
+
 .news-name {
   margin-bottom: 3px;
   font-size: 20px;
@@ -393,6 +466,10 @@ About
 }
 .skill-item {
   text-align: center;
+}
+.skill-body {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 /*--top--*/
@@ -419,4 +496,275 @@ About
   background-color: #333;
   border-radius: 50%;
   z-index: -1;
+}
+
+a {
+  padding: 0 10px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(50, 42, 42) 50%);
+  background-position: 0 0;
+  background-size: 200% auto;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+a:visited {
+  color: #fff;
+}
+
+a:hover {
+  background-position: -100% 0;
+  color: #d2c8ae;
+}
+
+/*公式サイト背景動画*/
+/* ここから */
+.mv {
+  width: 1000px;
+  height: 1000%;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+/* 全体を囲う要素 */
+.mv-wrap {
+  position: relative;
+  /* 背景画像の高さ */
+  height: 500px;
+}
+
+video {
+  display: block;
+  width: 100%;
+  /* 背景画像の高さ */
+  height: 500px;
+  /* 高さを維持したまま全体を表示させる */
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mv-bg {
+  display: block;
+  width: 1000px;
+  /* 背景画像の高さ */
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* 薄いレイヤーの色 */
+  background-color: rgba(0, 30, 0, 0.2);
+  /* videoの上に乗せる */
+  z-index: 2;
+}
+/*----リンク 枠金色--*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+/*背景*/
+body {
+  padding: 30px;
+
+  text-align: center;
+
+  background: #000;
+}
+
+.btn-border-gradient-wrap {
+  display: inline-block;
+
+  padding: 0.2rem;
+
+  border-radius: 0.5rem;
+}
+
+.btn-border-gradient-wrap--gold {
+  background-image: -webkit-linear-gradient(
+    315deg,
+    #704308 0%,
+    #ffce08 37%,
+    #fefeb2 47%,
+    #fafad6 50%,
+    #fefeb2 53%,
+    #e1ce08 63%,
+    #704308 100%
+  );
+  background-image: linear-gradient(
+    135deg,
+    #704308 0%,
+    #ffce08 37%,
+    #fefeb2 47%,
+    #fafad6 50%,
+    #fefeb2 53%,
+    #e1ce08 63%,
+    #704308 100%
+  );
+}
+
+.btn-border-gradient-wrap--gold:hover a.btn {
+  text-shadow: 0 0 15px rgba(250, 250, 214, 0.5), 0 0 15px rgba(250, 250, 214, 0.5),
+    0 0 15px rgba(250, 250, 214, 0.5), 0 0 15px rgba(250, 250, 214, 0.5);
+}
+
+a.btn-border-gradient {
+  font-size: 2rem;
+  background: #000;
+}
+
+.btn-text-gradient--gold {
+  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E',
+    'ＭＳ Ｐ明朝', serif;
+
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffdb), to(#a16422));
+
+  background: -webkit-linear-gradient(bottom, #ffffdb, #a16422);
+
+  background: linear-gradient(to top, #ffffdb, #a16422);
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+/*---/枠金色--*/
+/*----リンク 枠銀色--*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+/*背景*/
+body {
+  margin-bottom: 20px;
+  padding: 30px;
+
+  text-align: center;
+
+  background: #000;
+}
+
+.btn-border-gradient-wrap {
+  display: inline-block;
+
+  padding: 0.2rem;
+
+  border-radius: 0.5rem;
+}
+
+.btn-border-gradient-wrap--silver {
+  background-image: -webkit-linear-gradient(
+    315deg,
+    #333 0%,
+    #868888 20%,
+    #d8dcdc 34%,
+    #999a9c 35%,
+    #cccdce 43%,
+    white 53%,
+    #d1d6d7 68%,
+    #9b9d9f 84%,
+    #666 100%
+  );
+  background-image: linear-gradient(
+    135deg,
+    #333 0%,
+    #868888 20%,
+    #d8dcdc 34%,
+    #999a9c 35%,
+    #cccdce 43%,
+    white 53%,
+    #d1d6d7 68%,
+    #9b9d9f 84%,
+    #666 100%
+  );
+}
+
+a.btn-border-gradient {
+  font-size: 2rem;
+  background: #000;
+}
+
+.btn-text-gradient--silver {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#999));
+  background: -webkit-linear-gradient(bottom, #fff, #999);
+  background: linear-gradient(to top, #fff, #999);
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-border-gradient-wrap--silver:hover a.btn {
+  text-shadow: 0 0 15px rgba(209, 214, 215, 0.5), 0 0 15px rgba(209, 214, 215, 0.5),
+    0 0 15px rgba(209, 214, 215, 0.5), 0 0 15px rgba(209, 214, 215, 0.5);
+}
+/*---/枠銀色--*/
+.CONTACT section {
+  padding-bottom: 50px;
 }
